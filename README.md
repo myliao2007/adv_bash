@@ -8,5 +8,11 @@ description: Advanced Bash-Scripting Guide 的正體中文版
 
 Mendel Cooper ([thegrendel.abs@gmail.com)](mailto:thegrendel.abs@gmail.com)
 
+
+
+獻給 Anita，你是所有魔法的泉源。
+
 原文：[https://tldp.org/LDP/abs/html/](https://tldp.org/LDP/abs/html/)
+
+
 
