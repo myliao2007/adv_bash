@@ -2,4 +2,5 @@
 
 * [關於本書](README.md)
 * [修訂歷程記錄](xiu-ding-li-cheng-ji-lu.md)
-* [Untitled](untitled.md)
+* [中譯日誌](zhong-yi-ri-zhi.md)
+* [第一部、導讀](di-yi-bu-dao-du.md)
