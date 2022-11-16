@@ -1,5 +1,5 @@
 ---
-description: 工欲善其事，必先利其器。沒有萬用的程式語言，程式語言各有所長。  --Herbert Mayer
+description: 沒有程式語言是萬用的，不能只用一種程式語言打天下，只有合適與不合適的用途。  --Herbert Mayer
 ---
 
 # 第一章、shell 程式設計

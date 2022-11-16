@@ -1,5 +1,5 @@
 ---
-description: Script：寫作；寫完的文件。 — 韋氏詞典，1913年版。
+description: Script：寫作；完成的文件。 — 韋氏詞典，1913年版。
 ---
 
 # 第一部、導讀
