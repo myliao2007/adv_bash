@@ -10,4 +10,4 @@ description: 沒有萬用的程式語言，程式語言各有所長，工欲善�
 
 
 
-<mark style="color:blue;">(待續)</mark>
+<mark style="color:blue;">(本章待續)</mark>
