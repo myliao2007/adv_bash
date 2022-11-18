@@ -6,7 +6,7 @@ description: SHELL程式設計是一種20世紀50年代的自動點唱機。— 
 
 在最簡單的情況下，指令碼只不過是儲存在檔案中的一串系統指令清單，這至少可以節省一些時間，在每次呼叫該特定的一串指令時可以不用重新打字。
 
-**Example 2-1. **_**cleanup**_**: A script to clean up log files in /var/log**
+**Example 2-1. **_**cleanup**_**: 清理 /var/log 目錄中的 log 檔案**
 
 ```bash
 # Cleanup
@@ -49,7 +49,7 @@ exit #  The right and proper method of "exiting" from a script.
 
 現在這個開始看起來像個真正的 script 了，只是我們可以再更進一步 ...
 
-**Example 2-3. **_**cleanup**_**: An enhanced and generalized version of above scripts.**
+**Example 2-3. **_**cleanup**_**: 上述 script 的加強版。**
 
 ```bash
 #!/bin/bash
