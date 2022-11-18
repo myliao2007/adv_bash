@@ -156,4 +156,6 @@ Script 開頭的 #! \[1] 是要告訴你的系統，說明這個檔案是一組�
 #!/bin/awk -f
 ```
 
-<mark style="color:blue;">（本章待續）</mark>
+
+
+<mark style="color:blue;">to be continue ...</mark>
