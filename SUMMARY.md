@@ -8,4 +8,4 @@
   * [第一章、shell 程式設計](di-yi-bu-dao-du/di-yi-zhang-shell-cheng-shi-she-ji.md)
   * [第二章、從 #! 開始](part1-intro/chap02-start-off.md)
 * [第二部、基礎](di-er-bu-ji-chu/README.md)
-  * [特殊字元](di-er-bu-ji-chu/te-shu-zi-yuan.md)
+  * [第三章、特殊字元](di-er-bu-ji-chu/di-san-zhang-te-shu-zi-yuan.md)
