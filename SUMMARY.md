@@ -6,4 +6,4 @@
 * [聯絡譯者](lian-luo-yi-zhe.md)
 * [第一部、導讀](di-yi-bu-dao-du/README.md)
   * [第一章、shell 程式設計](di-yi-bu-dao-du/di-yi-zhang-shell-cheng-shi-she-ji.md)
-  * [從 #! 開始](part1-intro/chap02-start-off.md)
+  * [第二章、從 #! 開始](part1-intro/chap02-start-off.md)
