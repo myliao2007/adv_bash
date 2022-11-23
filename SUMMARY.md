@@ -9,4 +9,5 @@
   * [第二章、從 #! 開始](part1-intro/chap02-start-off.md)
 * [第二部、基礎](di-er-bu-ji-chu/README.md)
   * [第三章、特殊字元](di-er-bu-ji-chu/te-shu-zi-yuan.md)
-  * [第四章、變數與參數](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu.md)
+  * [第四章、變數與參數](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu/README.md)
+    * [4.1 變數替換](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu/4.1-bian-shu-ti-huan.md)
