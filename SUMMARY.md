@@ -12,3 +12,4 @@
   * [第四章、變數與參數](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu.md)
     * [4.1 變數](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu/4.1-bian-shu.md)
     * [4.2 變數賦值](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu/4.2-bian-shu-fu-zhi.md)
+    * [4.3 bash 的變數沒有型別](di-er-bu-ji-chu/di-si-zhang-bian-shu-yu-can-shu/4.3-bash-de-bian-shu-mei-you-xing-bie.md)
