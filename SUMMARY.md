@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Advanced Bash-Scripting Guide](README.md)
+* [原著資料](README.md)
 * [原文修訂歷程記錄](xiu-ding-li-cheng-ji-lu.md)
 * [中譯日誌](zhong-yi-ri-zhi.md)
 * [聯絡譯者](lian-luo-yi-zhe.md)

@@ -1,6 +1,10 @@
-# Advanced Bash-Scripting Guide 正體中文版
+---
+description: 深度探索 Shell 程式設計的藝術
+---
 
-本書旨在深度探索 Shell 程式設計的藝術
+# 原著資料
+
+原文題名：Advanced Bash-Scripting Guide
 
 原作：Mendel Cooper ([thegrendel.abs@gmail.com)](mailto:thegrendel.abs@gmail.com)
 
