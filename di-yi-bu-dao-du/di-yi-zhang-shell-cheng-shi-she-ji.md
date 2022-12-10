@@ -45,7 +45,7 @@ Shell script 回到了傳統的UNIX哲學：將複雜的專案分解為更簡單
 
 我們將使用Bash，它是「Bourne-Again shell」的縮寫 \[3l] ，也是史蒂芬·伯恩（Stephen Bourne）如今經典的 Bourne shell 的雙關語。Bash 已經成為大多數 UNIX 的 shell sciprt 的實際標準。 本書所涵蓋的大部分原則同樣適用於其他 shell 撰寫的 script，如 Korn Shell，Bash的一些功能就是從這個 shell 中獲得的；ill 和 C Shell 及其變體。（請注意，由於Tom Christiansen在1993年10月的Usenet文章中指出，由於某些固有的問題，不建議使用 C Shell。 ）
 
-接下來是關於 shell script 編寫的一個教學。它重度依賴範例來說明 shell 的各種功能。這些 script 範例是很管用的（已經盡量測試過了），其中一些甚至可以直接應用在現實生活。讀者可以從程式碼封存檔取得可以實際運作的原始碼來玩 (scriptname. sh 或 scriptname.bash)，\[我將它們的權限設定為可執行(chmod u+rx scriptname)，然後執行它們看看會怎樣。如果來源封存無法使用，則從 HTML 或 PDF 格式版本將程式碼剪下並貼上。請注意，此處介紹的某些 script 會有用到一些還未經解釋的功能，這可能會需要讀者暫時先不用理解，先跳過，先以能抓到精神為主。
+接下來是關於 shell script 編寫的一個教學。它重度依賴範例來說明 shell 的各種功能。這些 script 範例是很管用的（已經盡量測試過了），其中一些甚至可以直接應用在現實生活。讀者可以從程式碼封存檔取得可以實際運作的原始碼來玩 (scriptname. sh 或 scriptname.bash)，\[我將它們的權限設定為可執行(chmod u+rx scriptname)，然後執行它們看看會怎樣。如果來源封存無法使用，則從 HTML 或 PDF 格式版本將程式碼剪下並貼上。請注意，此處介紹的某些 script 會有用到一些還未經解釋的功能，這可能會需要讀者暫時先不用理解，先跳過，先掌握精神。
 
 除非另有說明，不然本文後續的 script 範例都是作者親自寫的。
 
