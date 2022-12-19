@@ -156,6 +156,77 @@ Script 開頭的 #! \[1] 是要告訴你的系統，說明這個檔案是一組�
 #!/bin/awk -f
 ```
 
+上列的每一行 script 表頭都是呼叫不同的指令直譯器，無論是預設的shell（在Linux系統中是bash）還是其它的。\[4] 使用 #!/bin/sh（大多數商業的 UNIX 變體中預設的 Bourne shell），使 script 可移植到非 Linux 機器上，儘管您犧牲了 Bash 特定的功能。但是，script 將符合POSIX \[5]sh 標準。
+
+請注意，在「sha-bang」處指定的路徑必須正確，否則錯誤訊息（通常是「找不到指令」）將是執行script 的唯一結果。\[6]
+
+如果script僅由一組通用系統指令組成，並且不使用內部shell指令，則可以省略 #!。上面的第二個範例需要初始化 #!，因為變數賦值行 lines=50 使用 shell 特定的構造。\[7]請再次注意，#!/bin/sh會呼叫預設的shell  解譯器，在 Linux 機器上預設為/bin/bash。
+
+{% hint style="info" %}
+本文件鼓勵使用模組化的方式來建立script，記錄並收集可能在未來script中有用的「樣板」程式碼片段。最終，你會建立相當龐大的日常用品庫。作為範例，以下script prolog 將測試是否已使用正確的引數數呼叫了script。
+{% endhint %}
+
+```bash
+E_WRONG_ARGS=85
+script_parameters="-a -h -m -z"
+#                  -a = all, -h = help, etc.
+
+if [ $# -ne $Number_of_expected_args ]
+then
+  echo "Usage: `basename $0` $script_parameters"
+  # `basename $0` is the script's filename.
+  exit $E_WRONG_ARGS
+fi
+```
+
+很多時候，您會撰寫執行一個特定任務的script。本章的第一個script是範例。稍後，您可能會想到，將執行其他類似任務的 script 樣板化。用變數取代文字（「硬連線」）常數是朝這個方向邁出的一步，用函式取代重複的程式碼區塊亦是如此。
+
+附註&#x20;
+
+\[1] 在文學作品中通常被看成是母語。這是由語彙基元sharp(#)和bang(!)的串連所衍生的。
+
+\[2] 一些UNIX型別（基於4.2 BSD的）據稱使用四位元組的魔術數字，要求在 ! -- 後面要有空格（#! /bin/sh）。根據斯文·馬斯克的說法，這可能是個神話。
+
+\[3] shell script中的 #！這行將是指令直譯器(sh或bash)看到的第一件事。由於此行以#開頭，因此當指令直譯器最終執行script時，它將正確解釋為註釋。這條電話已經達到了目的（致電指令口譯員）。
+
+如果script實際上包括了額外的 #！行，那麼bash會將其解釋為註解。
+
+```bash
+#!/bin/bash
+
+echo "Part 1 of script."
+a=1
+
+#!/bin/bash
+# This does *not* launch a new script.
+
+echo "Part 2 of script."
+echo $a  # Value of $a stays at 1.
+```
+
+這裡可以接受一些可愛的小把戲。
+
+```bash
+#!/bin/rm
+# Self-deleting script.
+
+# Nothing much seems to happen when you run this... except that the file disappears.
+
+WHATEVER=85
+
+echo "This line will never print (betcha!)."
+
+exit $WHATEVER  # Doesn't matter. The script will not exit here.
+                # Try an echo $? after script termination.
+                # You'll get a 0, not a 85.
 
 
-<mark style="color:blue;">\<TBC></mark>
+```
+
+此外，請嘗試使用 #!/bin/more 啟動 README 檔案，使其成為可執行檔。執行結果是將檔案本身輸出。（在此，使用貓的檔案可能是更好的選擇，見範例19-3）。
+
+\[5] 可攜式作業系統介面，嘗試標準化類 UNIX 作業系統。POSIX規範列在Open Group站點上。
+
+\[6] 為了避免這種可能性，script 可以從 #!/bin/env bash sha-bang 這行開始。這在 bash 不位於 /bin 路徑的 UNIX 電腦可能很幫助。
+
+\[7] 如果Bash是預設的shell，則 script 的開始不需要輸入#!。但是，如果從不同的 shell（如tcsh）啟動script，則需要 #!。
