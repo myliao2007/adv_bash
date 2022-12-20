@@ -223,7 +223,7 @@ exit $WHATEVER  # Doesn't matter. The script will not exit here.
 
 ```
 
-此外，請嘗試使用 #!/bin/more 啟動 README 檔案，使其成為可執行檔。執行結果是將檔案本身輸出。（在此，使用貓的檔案可能是更好的選擇，見範例19-3）。
+此外，請嘗試使用 #!/bin/more 啟動 README 檔案，使其成為可執行檔。執行結果是將檔案本身輸出。（在此，使用 cat 檔案可能是更好的選擇，見範例19-3）。
 
 \[5] 可攜式作業系統介面，嘗試標準化類 UNIX 作業系統。POSIX規範列在Open Group站點上。
 
